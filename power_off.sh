@@ -6,7 +6,7 @@ unset LD_PRELOAD
 
 echo "Shutdown command to host..."
 
-ssh -o StrictHostKeyChecking=no -o ConnectTimeout=10 root@{remote_host_address} -i /opt/config/mod_data/ssh.key "nohup {path_to}/poweroff_me2.sh black >/dev/null 2>1&1 &"
+ssh -o StrictHostKeyChecking=no -o ConnectTimeout=10 root@{remote_host_address} -i /opt/config/mod_data/ssh.key "nohup {path_to}/poweroff_me.sh black >/dev/null 2>1&1 &"
 sleep 5
 
 echo "shutdown init..."
